@@ -1,34 +1,11 @@
-
-// You are given two numbers 
+// You are given an integer 
 // A
-//  and 
-// B
-// . You need to do the following checks:
-
-// if both are divisible by 10 console true.
-// if both are not divisible by 10 console false.
-// if one of them only is divisible by 10 console true.
-// Use operator to do this.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const Check = (A, B) => 
-{
-  if (A%10 ==0 && B%10 ==0){return true}
-
-else if(A%10 !=0 && B%10 !=0){return false}
-
-else {return true}
-  
+// , denoting the age of a person, and your task is to determine whether he/she is eligible to vote or not.
+const isEligible = (a) => {
+    if(a>=18){
+      return "Eligible for Voting"
+    }
+    else{
+      return "Not Eligible for Voting"
+    }
 };
